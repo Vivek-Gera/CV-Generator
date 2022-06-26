@@ -26,6 +26,10 @@ app.get("/api/:id", async (req, res) => {
   res.send({ success: true, resumeData: data });
 });
 
+app.get("/", (req,res) =>{
+  res.send({success:true})
+})
+
 app.listen(process.env.PORT || 9999, () => {
   console.log(
     `server is listening at port ${process.env.PORT} in ${process.env.NODE_ENV} environment`
