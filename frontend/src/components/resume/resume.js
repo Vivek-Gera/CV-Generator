@@ -9,9 +9,9 @@ const ResumeComponent = ({ match }) => {
   const [mounted, setMounted] = useState(false);
   useEffect(() => {
     const fetchedData = async () => {
-      // "https://cv-generator-mern.herokuapp.com/api"
+      
       await axios
-        .get(`https://curriculum-vitae-generator.herokuapp.com/api/${match.params.id}`)
+        .get(`http://localhost:9999/api/${match.params.id}`)
         .then((res) => {
           if (res.data.success) {
             setMounted(true);
@@ -228,8 +228,9 @@ const ResumeComponent = ({ match }) => {
                 </ul>
               </Col>
             </Row>
+            <div  className="border-bottom border-dark w-100"></div>
             <Row>
-              <h1 className="w-100"> Hands On Skills </h1>
+              <h1 className="w-100 text-center text-dark w-100 pt-4 font-weight-bold"> Hands On Skills </h1>
               <p>{userResumeData.userSkills}</p>
             </Row>
           </main>

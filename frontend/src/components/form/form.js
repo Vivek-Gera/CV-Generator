@@ -382,7 +382,7 @@ const FormComponent = ({ history }) => {
             <FormLabel>Location</FormLabel>
             <FormControl
               type="text"
-              placeholder="Lahore, Pakistan"
+              placeholder="Guntur, India"
               onChange={handleUserLocation}
               value={userLocation}
               required
@@ -394,7 +394,7 @@ const FormComponent = ({ history }) => {
             <FormLabel> Mobile Phone </FormLabel>
             <FormControl
               type="number"
-              placeholder="+01 23 456 789"
+              placeholder="+91 0123456789"
               onChange={handleUserPhoneNumber}
               value={userPhoneNumber}
               required
