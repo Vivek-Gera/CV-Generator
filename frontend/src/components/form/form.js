@@ -263,7 +263,7 @@ const FormComponent = ({ history }) => {
     e.preventDefault();
     // https://cv-generator-mern.herokuapp.com/api
     axios
-      .post("http://localhost:9999/api", {
+      .post("https://curriculum-vitae-generator.herokuapp.com/api", {
         userFirstName,
         userSecondName,
         userGender,
