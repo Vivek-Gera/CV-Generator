@@ -16,4 +16,4 @@ CV generator application developed using ReactJS, Express JS,  NodeJS and Mongo 
 
 ## Project Preview:
 
-[CV-generator-application]()
+[CV-generator-application](https://whimsical-pavlova-7b0224.netlify.app/)
